@@ -4,6 +4,7 @@
   "description": "browserify transform for the regenerator library",
   "main": "index.js",
   "scripts": {
+    "build": "cp node_modules/regenerator/runtime/min.js runtime.js",
     "prepublish": "cp node_modules/regenerator/runtime/min.js runtime.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
