@@ -4,7 +4,7 @@ var regenerator = require('regenerator');
 var through     = require('through');
 
 module.exports = function(file) {
-  var data = "";
+  var data = "require('regeneratorify/runtime');\n\n";
   var stream = through(write, end);
 
   return stream;
